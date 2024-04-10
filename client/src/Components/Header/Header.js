@@ -1,20 +1,20 @@
-import React, { useEffect, useRef, useState } from "react";
+// import { gsap } from "gsap";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from '../image/logo7.jpg';
 import "./Header.css";
-import { gsap } from "gsap";
 
 const Header = () => {
   const [showbar, setShowbar] = useState(false);
   const container = useRef(null);
 
-  useEffect(() => {
-    gsap.to(".menu-link ul",{
-       y :"-100",
-       stagger:0.5,
-       duration:2,
-    })
-  }, [])
+  // useEffect(() => {
+  //   gsap.from(".menu-link ul",{
+  //      y :"-100",
+  //      stagger:0.5,
+  //      duration:2,
+  //   })
+  // }, [])
   
   return (
     <>

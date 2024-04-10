@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <div class="w-full min-h-[20rem] flex items-center justify-center bg-black pt-5 ">
         <div class="md:w-2/3 w-full px-4 text-white flex flex-col">
-          <div class="w-full text-7xl font-bold">
+          <div class="w-full text-5xl font-bold">
             <h1 class="w-full md:w-2/3 ">
               Capturing moments, creating memories.
             </h1>
@@ -26,13 +26,11 @@ const Footer = () => {
           <div class="flex flex-col">
             <div class="flex mt-24 mb-12 flex-row justify-between">
               <div class="">
-                <h1 className="text-2xl">
+                <h1 className="text-xl">
                   The Nishchay Srivastava Photography<sup> © </sup>
                 </h1>
               </div>
-              <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
-                About
-              </a>
+              
               <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
                 Services
               </a>
@@ -41,9 +39,6 @@ const Footer = () => {
               </a>
               <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
                 Contact
-              </a>
-              <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
-                PRE-WEDDING
               </a>
               <div class="flex flex-row space-x-8 items-center justify-between">
                 <div className="socialmedia-links gap-4 flex text-2xl decoration-white">

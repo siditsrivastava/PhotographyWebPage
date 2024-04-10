@@ -128,4 +128,8 @@
   .testimonial-slide {
     width: 33.333%;
   }
+  .testimonial-comment {
+    width: 15rem;/* Adjusted margin for mobile */
+  }
+  
 }

@@ -5,11 +5,15 @@
   background-color: white;
   color: rgb(0, 0, 0);
   padding-top: 70px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .video-title-section {
   text-align: center;
-  font-family: "Dancing Script", cursive;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3rem;
 }
 
 .video-title-section h1 {
@@ -25,15 +29,18 @@
   text-align:center;
   /* width:35rem; */
   /* height: 20rem; */
+  border-radius: 1rem;
   padding-left: 0.5rem;
   border: none;
   object-fit: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .youtube-viedo-section iframe {
-  width: 35rem;
-  height: 20rem;
+  width: 30rem;
+  height: 17rem;
   object-fit: cover;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
 }
 
 /* .youtube-viedo-section iframe{ */

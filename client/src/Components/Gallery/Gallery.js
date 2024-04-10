@@ -1,9 +1,19 @@
-import React, { useEffect, useState } from "react";
-import "./Gallery.css";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 import axios from "axios";
+import React, { useEffect, useState } from "react";
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 import Loader from "../Loader/Loader";
+import d from '../image/d.jpg';
+import eightImg from '../image/eightImg.jpg';
+import firstImg from '../image/firstImg.jpg';
+import fortheen from '../image/fortheen.jpg';
+import ninethImg from '../image/ninethImg.jpeg';
+import sixthImg from '../image/sixthImg.jpg';
+import thirdImg from '../image/thirdImg.jpeg';
+import thirdteenImg from '../image/thirdteenImg.jpg';
+import twelveImg from '../image/twelveImg.webp';
+import "./Gallery.css";
+
 // import {INSTRAGRAM_ACCESS_KEY , INSTRAGRAM_TOKEN_KEY} from ''
 
 const Gallery = () => {
@@ -88,9 +98,20 @@ const Gallery = () => {
           <hr style={{ backgroundColor: "#b55467" }}></hr>
         </div>
         <br></br>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-[5rem] ml-2 mr-2">
+        <img src={twelveImg} className="w-full brightness-75 hover:brightness-100" alt="image" />
+      <img src={eightImg} className="w-full brightness-75 hover:brightness-100" alt="Image" />
+      <img src={thirdteenImg} className="w-full brightness-75 hover:brightness-100" alt="Image" />
+      <img src={firstImg} className="w-full brightness-75 hover:brightness-100" alt="Image" />
+      <img src={ninethImg} className="w-full brightness-75 hover:brightness-100" alt="Image" />
+      <img src={thirdImg} className="w-full brightness-75 hover:brightness-100" alt="Image" />
+      <img src={fortheen} className="w-full brightness-75 hover:brightness-100" alt="image" />
+      <img src={sixthImg} className="w-full brightness-75 hover:brightness-100" alt="Image" />
+      <img src={d} className="w-full brightness-75 hover:brightness-100" alt="Image" />
+      </div>
         {error ? (
           <h4 className="error" style={{ textAlign: "center" }}>
-            {error}
+            {/* {error} */}
           </h4>
         ) : (
           <>
@@ -186,6 +207,7 @@ const Gallery = () => {
         )}
         <br></br>
       </div>
+      
       <Footer />
     </>
   );

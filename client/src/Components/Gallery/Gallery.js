@@ -93,7 +93,7 @@ const Gallery = () => {
       <Header />
       <div className="gallery-section">
         <div className="Gallery-image-section container">
-          <hr></hr>
+        <br></br>
           <h1>IMAGE.</h1>
           <hr style={{ backgroundColor: "#b55467" }}></hr>
         </div>

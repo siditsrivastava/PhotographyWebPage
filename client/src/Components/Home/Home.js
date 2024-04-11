@@ -36,7 +36,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="  Line border-t-2 border-white-490 mt-[20rem] flex justify-between p-4 lg:text-xl sm: text-[.7rem] ">
+          <div className="  Line border-t-2 border-white-490 mt-[15rem] flex justify-between p-4 lg:text-xl sm: text-[.7rem] ">
           <h2  ref={(el) => (LanRef.current[0] = el)}  className='hidden xl:block markus  xl:3xl text-white'> Every click, a love story; every frame, a treasure. 💖📸</h2>
             <button className="hidden xl:block text-white">scroll</button>
           </div>

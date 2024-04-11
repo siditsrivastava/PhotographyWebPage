@@ -29,23 +29,16 @@ const Home = () => {
             <h1 className="con text-[5rem]">Welcome</h1>
             <div className="welcome-content text-[2rem]">
               <p>
-                Imagine waking up to a job that lifts you up and transports you
-                to a different world.
+              Step into a world where Bollywood dreams, Hollywood magic, and Disney fairytales converge. 
               </p>
               <p>
-                A world populated with a billion heartfelt feelings and stories
-                etched ceremoniously in magic, love and joie de vivre.
+              Welcome to  The Nishchay Srivastava Photography, where every moment is a blockbuster in the making.
               </p>
-              <p>
-                Perfect with its Disney-like happy endings, sworn vows and the
-                promises of forever. This is our world.
-              </p>
-              <p> The Wedding Story world!</p>
             </div>
           </div>
-          <div className="  Line border-t-2 border-white-490 mt-[10rem] flex justify-between p-4 lg:text-xl sm: text-[.7rem] ">
-          <h2  ref={(el) => (LanRef.current[0] = el)}  className='markus  xl:3xl text-white'> Every click, a love story; every frame, a treasure. 💖📸</h2>
-            <button className="text-white">scroll</button>
+          <div className="  Line border-t-2 border-white-490 mt-[20rem] flex justify-between p-4 lg:text-xl sm: text-[.7rem] ">
+          <h2  ref={(el) => (LanRef.current[0] = el)}  className='hidden xl:block markus  xl:3xl text-white'> Every click, a love story; every frame, a treasure. 💖📸</h2>
+            <button className="hidden xl:block text-white">scroll</button>
           </div>
           <br></br>
         </div>

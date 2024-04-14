@@ -108,6 +108,13 @@
   font-weight: bold;
 }
 
+.sumit{
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-color: red;
+}
+
 .forth-home-section p {
   padding-top: 0.6rem;
 }
@@ -192,3 +199,4 @@
   font-weight: 900;
   font-style: normal;
 }
+

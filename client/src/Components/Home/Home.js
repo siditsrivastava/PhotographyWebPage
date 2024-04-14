@@ -5,6 +5,7 @@ import Header from "../Header/Header";
 import Marquee from "../Marquee/Marquee";
 import Photo from "../Photos/Photo";
 // import Stories from '../Stories/Stories';
+import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import Testimonial from "../Testimonial/Testimonial";
 import "./Home.css";
 
@@ -20,6 +21,11 @@ const Home = () => {
       tl.fromTo(el, { opacity: 0, x: "-100" }, { opacity: 1, x: 0, duration: 1, ease: 'power2.out' }, index * 0.5);
   });
 }, []);
+
+const [text] = useTypewriter({
+  words: [ 'The Nishchay Srivastava Photography '],
+  loop:{}
+})
   return (
     <>
       <Header />
@@ -27,19 +33,26 @@ const Home = () => {
         <div className=" home-section container-fluid">
           <div className="welcome-note container">
             <h1 className="con text-[5rem]">Welcome</h1>
-            <div className="welcome-content text-[2rem]">
+            <div className="welcome-content text-xl">
               <p>
               Step into a world where Bollywood dreams, Hollywood magic, and Disney fairytales converge. 
               </p>
               <p>
-              Welcome to  The Nishchay Srivastava Photography, where every moment is a blockbuster in the making.
+              Welcome to {' '} 
+              <span className=' sumit font-bold font-pacifico'>
+                {text}
+              </span>
+              <span>
+                <Cursor/>
+              </span>
+              , where every moment is a blockbuster in the making.
               </p>
             </div>
           </div>
-          <div className="  Line border-t-2 border-white-490 mt-[10rem] flex justify-between p-4 lg:text-xl sm: text-[.7rem] ">
-          <h2  ref={(el) => (LanRef.current[0] = el)}  className='markus  xl:3xl text-white'> Every click, a love story; every frame, a treasure. 💖📸</h2>
-            <button className="text-white">scroll</button>
-          </div>
+          <div className="Line border-t-2 border-white-490 mt-[10rem] sm:mt-[6em] md:mt-[7rem] lg:mt-[9rem] xl:mt-[27rem] flex justify-between p-4 lg:text-xl hidden sm:flex">
+  <h2 ref={(el) => (LanRef.current[0] = el)} className='markus xl:3xl text-white'>Every click, a love story; every frame, a treasure. 💖📸</h2>
+  <button className="text-white">scroll</button>
+</div>
           <br></br>
         </div>
       </div>

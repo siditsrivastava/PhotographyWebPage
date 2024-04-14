@@ -49,9 +49,9 @@ const [text] = useTypewriter({
               </p>
             </div>
           </div>
-          <div className="Line border-t-2 border-white-490 mt-[10rem] sm:mt-[6em] md:mt-[7rem] lg:mt-[9rem] xl:mt-[27rem] flex justify-between p-4 lg:text-xl hidden sm:flex">
-  <h2 ref={(el) => (LanRef.current[0] = el)} className='markus xl:3xl text-white'>Every click, a love story; every frame, a treasure. 💖📸</h2>
-  <button className="text-white">scroll</button>
+          <div className="Line border-t-2 border-white-490 mt-[10rem] sm:mt-[6em] md:mt-[7rem] lg:mt-[9rem] xl:mt-[20rem] flex justify-between p-4 lg:text-xl hidden sm:flex">
+          <h2 ref={(el) => (LanRef.current[0] = el)} className='markus xl:3xl text-white'>Every click, a love story; every frame, a treasure. 💖📸</h2>
+           <button className="text-white">scroll</button>
 </div>
           <br></br>
         </div>

@@ -26,6 +26,7 @@ const [text] = useTypewriter({
   words: [ 'The Nishchay Srivastava Photography '],
   loop:{}
 })
+// sidit stlsdkjbskdb
   return (
     <>
       <Header />

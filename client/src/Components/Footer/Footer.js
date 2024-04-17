@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import './Footer.css'
+// import secondlogo from '../image/NishchayPhotographywhiteColorLogo.png'
 
 const Footer = () => {
   return (
@@ -25,9 +26,10 @@ const Footer = () => {
           </div>
           <div class="flex flex-col">
             <div class="flex mt-24 mb-12 flex-row justify-between">
-              <div class="">
+              <div >
                 <h1 className="text-xl">
                   The Nishchay Srivastava Photography<sup> © </sup>
+                  {/* <img src={secondlogo} className ="logos" alt="logos"/> */}
                 </h1>
               </div>
               

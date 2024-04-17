@@ -31,6 +31,23 @@
     font-weight: 900;
     font-style: normal;
 }
+.text-xl{
+    /* width: 20px;
+    height: 100px; */
+    color: aliceblue;
+  
+
+}
+
+.logos{
+    width: 12.5rem;
+    height: 5.25rem;
+    display: -ms-grid;
+    display: grid;
+    margin-left: 1.25rem;
+    background-color: red;
+    /* margin-bottom: 10rem; */
+}
 
 /* Applying font to client name as well */
 .copy-right .client-name {

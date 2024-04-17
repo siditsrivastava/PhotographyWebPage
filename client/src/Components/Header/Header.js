@@ -1,7 +1,7 @@
 // import { gsap } from "gsap";
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from '../image/logo7.jpg';
+import logo from '../image/NishchayPhotographyLogo.png';
 import "./Header.css";
 
 const Header = () => {

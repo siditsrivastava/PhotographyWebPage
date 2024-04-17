@@ -36,25 +36,15 @@ li {
   z-index: 99;
 }
 
-.logo {
+ .logo {
   width: 12.5rem;
   height: 5.25rem;
   display: -ms-grid;
   display: grid;
   margin-left: 1.25rem;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-  mix-blend-mode: color-dodge;
-}
+     object-fit:contain;
+  /* mix-blend-mode: color-dodge; */
+} 
 
 .menu-link {
   -ms-grid-column: 4;
@@ -170,7 +160,7 @@ li {
 @media (max-width: 450px) {
   .logo {
     width: 10rem;
-    margin-left: 0.313rem;
+    /* margin-left: 0.313rem; */
   }
 }
 
@@ -183,13 +173,13 @@ li {
     height: 14.375rem;
   }
   .main-nav {
-    height: 1.875rem;
+    /* height: 1.875rem; */
   }
 }
 
 @media (max-width: 998px) {
   .main-nav {
-    height: 7rem;
+    /* height: rem; */
     -ms-grid-columns: 2rem 2fr 3fr 2rem 2rem;
     grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
   }
@@ -198,9 +188,8 @@ li {
     display: none;
   }
 
-  .logo,
   .social-media ul {
-    height: 7rem;
+    height: 1rem;
   }
   .mobile-menu-link {
     background-color: #b55467;
@@ -224,7 +213,7 @@ li {
       rgba(0, 0, 0, 0.3) 0px 3.125rem 3.75rem -1.875rem;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 3.125rem 6.25rem -1.25rem,
       rgba(0, 0, 0, 0.3) 0px 3.125rem 3.75rem -1.875rem;
-    margin-top: 5px;
+    margin-top: 3px;
   }
 
   .mobile-menu-link ul {
@@ -271,7 +260,7 @@ li {
 
   .social-media .hamburger-menu {
     display: block;
-    margin-top: 1.56rem;
+    /* margin-top: 0.5rem; */
     font-size: 2.5rem;
   }
 
@@ -288,13 +277,12 @@ li {
     grid-template-columns: 1rem 2fr 1fr 1fr 1rem;
   }
 
-  .logo,
   .social-media ul {
-    height: 7rem;
+    height: 1rem;
   }
 
   .social-media {
-    height: 6rem;
+    height: 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -307,18 +295,18 @@ li {
 
   .social-media .hamburger-menu {
     display: block;
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
+    margin-bottom: 0.01rem;
   }
 }
 
 @media (max-width: 520px) {
   .main-nav {
-    height: 6rem;
+    /* height: 6rem; */
     -ms-grid-columns: 1rem 4fr 1fr 1fr 1rem;
     grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
   }
 
-  .logo,
   .social-media ul {
     height: 6rem;
   }
@@ -328,7 +316,7 @@ li {
   }
 
   .social-media {
-    height: 6rem;
+    height: 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -341,7 +329,7 @@ li {
 
   .social-media .hamburger-menu {
     display: block;
-    margin-top: 0;
+    /* margin-top: 0; */
     font-size: 2.5rem;
   }
 }

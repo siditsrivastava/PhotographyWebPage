@@ -3,8 +3,8 @@ import React, { useState } from "react";
 const FaqcardItems = (props) => {
   const [show, setshow] = useState(false);
   return (
-    <div className="">
-      <div className="question-section">
+    <div className="container">
+      <div className="question-section ">
         <div className="question-btn-portion">
           <p className=" plus-button btn" onClick={() => setshow(!show)}>
             {show ? (

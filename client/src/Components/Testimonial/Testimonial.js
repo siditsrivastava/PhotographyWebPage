@@ -90,6 +90,7 @@ const TestimonialSlider = () => {
 
   return (
     <div className="testimonial-slider-container">
+    {/* <h1 className="testimonial text-[3rem] mt-[3rem]">TESTIMONIAL</h1> */}
       <div className="testimonial-slider" ref={testimonialSliderRef}>
         <div className="testimonial-slide active">
           <Testimonial testimonial={prevTestimonial} />

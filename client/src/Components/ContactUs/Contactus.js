@@ -20,7 +20,7 @@ const Contactus = () => {
 
   const [error, setError] = useState("");
   const [show, setshow] = useState(true);
-  const [pleaseWait , setPleaseWait] = useState(false);
+  const [pleaseWait, setPleaseWait] = useState(false);
   const [successfullySubmit, setSuccessfullySubmit] = useState(false);
   const [successfullyReset, setSuccessfullyReset] = useState(false);
   let value, name;
@@ -55,7 +55,7 @@ const Contactus = () => {
         }, 3000);
       } else {
         console.log(userdata);
-        
+
         const res = await fetch(
           "https://nishchayphotographyapi.onrender.com/contact",
           {
@@ -98,7 +98,7 @@ const Contactus = () => {
   };
   const onReset = (e) => {
     e.preventDefault();
-    
+
     setUserdata({
       userbridename: "",
       usergroomname: "",
@@ -108,7 +108,7 @@ const Contactus = () => {
       userweddingdetails: "",
     });
     setSuccessfullyReset(true);
-    setPleaseWait(true)
+    setPleaseWait(true);
     setTimeout(() => {
       setPleaseWait(false);
       setSuccessfullyReset(false);
@@ -118,10 +118,9 @@ const Contactus = () => {
   return (
     <>
       <Header />
-      <div className="contact-section">
+       <div className="contact-section container">
         <div className="contact-title-section container">
-          <hr></hr>
-          <h1>Contact Us.</h1>
+          <h1>CONTACT US .</h1>
           <hr style={{ backgroundColor: "#b55467" }}></hr>
         </div>
         <br></br>
@@ -150,8 +149,7 @@ const Contactus = () => {
             </Alert>
           ) : null}
         </div>
-        <div className="form-section container">
-          <div className="form-contents">
+        <div className="">
             <form className="form" method="POST">
               <div className="contact-form">
                 <div className="data-form" onClick={() => setshow(true)}>
@@ -277,7 +275,134 @@ const Contactus = () => {
           ></iframe>
         </div>
         <br></br>
-      </div>
+      {/* <div className="contact-section">
+        <div className="contact-title-section container">
+          <h1>Contact Us.</h1>
+          <hr style={{ backgroundColor: "#b55467" }}></hr>
+        </div>
+        <div className="contact-map-section">
+          <div>
+            <form className="form" onSubmit={onSubmit} method="POST">
+              <div className="contact-form">
+                <div className="data-form">
+                  <label htmlFor="bridename">Bride Name</label>
+                  <input
+                    id="bridename"
+                    variant="standard"
+                    fullWidth
+                    className="name-input"
+                    required
+                    name="userbridename"
+                    type="bridename"
+                    value={userdata.userbridename}
+                    onChange={handlerInputs}
+                    autoComplete="off"
+                    class="form-control"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div className="data-form">
+                  <label htmlFor="bridename">Groom Name</label>
+                  <input
+                    id="groomname"
+                    fullWidth
+                    label=" GROOM'S NAME "
+                    variant="standard"
+                    className="name-input"
+                    required
+                    name="usergroomname"
+                    type="groomname"
+                    value={userdata.usergroomname}
+                    onChange={handlerInputs}
+                    autoComplete="off"
+                    InputLabelProps={{ className: "nameinput" }}
+                    class="form-control"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div className="data-form">
+                  <label htmlFor="bridename">Number</label>
+                  <input
+                    id="number"
+                    fullWidth
+                    label="NUMBER "
+                    type="number"
+                    variant="standard"
+                    className="name-input"
+                    required
+                    name="usernumber"
+                    value={userdata.usernumber}
+                    onChange={handlerInputs}
+                    autoComplete="off"
+                    class="form-control"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div className="data-form">
+                  <label htmlFor="bridename">Wedding Date</label>
+                  <input
+                    id="weddingdate"
+                    fullWidth
+                    type={show ? "" : "date"}
+                    label="YOUR WEDDING  DATE "
+                    variant="standard"
+                    className="name-input"
+                    placeholder=""
+                    required
+                    name="userweddingdate"
+                    value={userdata.userweddingdate}
+                    onChange={handlerInputs}
+                    onClick={() => setshow(false)}
+                    autoComplete="off"
+                    InputLabelProps={{ className: "nameinput" }}
+                    class="form-control"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div className="data-form">
+                  <label htmlFor="bridename">Wedding Details</label>
+                  <textarea
+                    id="weddingdetails"
+                    fullWidth
+                    label="Your Wedding details "
+                    variant="standard"
+                    className="name-input"
+                    type="text"
+                    required
+                    name="userweddingdetails"
+                    value={userdata.userweddingdetails}
+                    onChange={handlerInputs}
+                    autoComplete="off"
+                    InputLabelProps={{ className: "nameinput" }}
+                    class="form-control"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div className="contact-form-btn">
+                  <button className="submit-btn btn" onClick={onSubmit}>
+                    Submit
+                  </button>
+                  <button className="reset-btn btn" onClick={onReset}>
+                    Reset
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div className="google-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3688.640647215153!2d79.46309066787792!3d25.993589700337996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDU5JzM2LjkiTiA3OcKwMjcnNTMuOSJF!5e0!3m2!1sen!2sin!4v1685449318801!5m2!1sen!2sin"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="map"
+            ></iframe>
+          </div>
+        </div>
+      </div> */}
       <Footer />
     </>
   );

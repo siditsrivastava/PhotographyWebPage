@@ -1,48 +1,50 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Link } from "react-router-dom";
-import './Footer.css'
+import "./Footer.css";
 // import secondlogo from '../image/NishchayPhotographywhiteColorLogo.png'
 
 const Footer = () => {
   return (
     <>
-      <div class="w-full min-h-[20rem] flex items-center justify-center bg-black pt-5 ">
-        <div class="md:w-2/3 w-full px-4 text-white flex flex-col">
-          <div class="w-full text-5xl font-bold">
-            <h1 class="w-full md:w-2/3 ">
+      <div className="w-full min-h-[20rem] flex items-center justify-center bg-black pt-5 ">
+        <div className="md:w-2/3 w-full px-4 text-white flex flex-col">
+          <div className="w-full text-5xl font-bold">
+            <h1 className="footer-content w-full md:w-2/3 ">
               Capturing moments, creating memories.
             </h1>
           </div>
-          <div class="flex mt-8 flex-col md:flex-row md:justify-between">
-            <p class="w-full md:w-2/3 text-gray-400">
+          <div className="flex mt-8 flex-col md:flex-row md:justify-between">
+            <p className="w-full md:w-2/3 text-gray-400">
               "Capture the magic of your special day with our professional
               wedding photography services. Cherish every moment forever."
             </p>
-            <div class="w-44 pt-6 md:pt-0">
-              <a class="bg-red-500 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">
-                Contact US
-              </a>
+            <div className="w-44 pt-6 md:pt-0">
+              <button className=" contactus-btn btn">
+                <Link to="/contactUs" className="bg-red-500 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">
+                  Contact US
+                </Link>
+              </button>
             </div>
           </div>
-          <div class="flex flex-col">
-            <div class="flex mt-24 mb-12 flex-row justify-between">
-              <div >
+          <div className="flex flex-col">
+            <div className=" contact-details flex mt-24 mb-12 flex-row justify-between">
+              <div>
                 <h1 className="text-xl">
                   The Nishchay Srivastava Photography<sup> © </sup>
                   {/* <img src={secondlogo} className ="logos" alt="logos"/> */}
                 </h1>
               </div>
-              
-              <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
+              {/* <a className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
                 Services
               </a>
-              <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
+              <a className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
                 Why us
               </a>
-              <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
+              <a className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
                 Contact
-              </a>
-              <div class="flex flex-row space-x-8 items-center justify-between">
+              </a> */}
+              <div class=" flex flex-row space-x-8 items-center justify-between">
                 <div className="socialmedia-links gap-4 flex text-2xl decoration-white">
                   <Link
                     to="https://instagram.com/nishchaysrivastavaphotography?igshid=MzRlODBiNWFlZA=="
@@ -68,8 +70,8 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <hr class="border-gray-600" />
-            <p class="w-full text-center my-12 text-gray-600">
+            <hr className="border-gray-600" />
+            <p className="w-full text-center my-12 text-gray-600">
               Copyright © 2023 INDIA, All Rights Reserved
             </p>
           </div>

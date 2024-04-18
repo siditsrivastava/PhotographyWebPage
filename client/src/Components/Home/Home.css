@@ -2,7 +2,7 @@
 
 .home-section {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background: url("../image/first_pic.JPG");
   background-position: center;
   background-size: cover;
@@ -18,6 +18,10 @@
   height: 18.75rem;
   padding-top: 6.25rem;
   text-align: center;
+}
+
+.weclome-text{
+  font-size: 5rem;
 }
 
 .sidit {
@@ -44,18 +48,14 @@
 
 .welcome-content {
   margin-top:1.87rem;
-  
 }
 
 .welcome-note p {
-  margin-top: 0.938rem;
   word-spacing: 0.3rem;
-  padding-left: 3.125rem;
+  text-align: center;
   font-family: "Playfair Display", serif;
   font-weight: 500;
   font-style: normal;
-  margin-top: 0.625rem;
-  
 }
 
 .second-home-section {
@@ -65,9 +65,13 @@
   text-align: center;
   padding-top: 5.625rem;
   color: #b55467;
-  font-family: "Playfair Display", serif;
+
   font-weight: 900;
   font-style: normal;
+}
+
+.second-home-section p {
+  font-family: "Playfair Display", serif;
 }
 
 .second-home-section h6 {
@@ -82,12 +86,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-.third-home-section h5 {
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   color: white;
-  padding-top: 7.2rem;
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-style: normal;
@@ -106,6 +109,7 @@
   font-weight: 900;
   font-style: normal;
   font-weight: bold;
+  margin-top: 40rem;
 }
 
 .sumit{
@@ -127,30 +131,31 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-}
-
-.fifth-home-section h5 {
   text-align: center;
   color: white;
-  padding-top: 7.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-style: normal;
   font-size: 3.125rem;
+  /* padding-top: 2rem; */
+  
 }
 
-.sixth-home-section {
+.sixth-home-section p{
   width: auto;
-  height: 280px;
+  height: 17.5rem;
   background-color: white;
   text-align: center;
+  padding-top: 5.625rem;
   color: #b55467;
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-style: normal;
-  padding-top: 5.625rem;
-  font-weight: bold;
 }
+
 
 .seventh-home-section {
   width: auto;
@@ -161,28 +166,29 @@
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
-}
-
-.seventh-home-section h5 {
-  text-align: center;
   color: white;
-  padding-top: 7.5rem;
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-style: normal;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   font-size: 3.125rem;
 }
 
-.eight-home-section {
+.eight-home-section{
   width: auto;
   background-color: white;
   text-align: center;
-  font-family: "Playfair Display", serif;
+ 
   font-weight: 900;
   font-style: normal;
   padding-top: 3.125rem;
   color: #b55467;
   font-weight: bold;
+}
+.eight-home-section p{
+  font-family: "Playfair Display", serif;
 }
 
 .testimonial {
@@ -198,5 +204,34 @@
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-style: normal;
+}
+
+@media screen and (max-width:375px) {
+
+  .weclome-text{
+    font-size: 4rem;
+  }
+  
+}
+@media screen and (max-width:321px) {
+
+  .weclome-text{
+    font-size: 3rem;
+  }
+  
+}
+@media screen and (max-width:284px) {
+
+  .sixth-home-section{
+    padding-top: 2.5rem;
+  }
+  
+}
+@media screen and (max-width:245px) {
+
+  .weclome-text{
+    font-size: 2.5rem;
+  }
+  
 }
 

@@ -28,10 +28,9 @@ const Faq = () => {
   return (
     <>
     <Header />
-      <div className="faq-section container-fluid">    
-        <div className="faq-title-section container">
-          <hr></hr>
-          <h1>Frequently Asked Question.</h1>
+      <div className="faq-section container">    
+        <div className="faq-title-section container-fluid">
+          <h1>FREQUENTLY ASKED QUESTION .</h1>
           <hr style={{backgroundColor:"#b55467"}}></hr>
         </div>
         <div className=" question-answer-section container">

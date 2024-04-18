@@ -31,19 +31,6 @@ const Gallery = () => {
     setModel(true);
   };
 
-  // const  pic = [
-  //   {media_url : "../image/firstImg.jpeg"},
-  //   {media_url : "../image/firstImg.jpeg"},
-  //   {media_url : "../image/firstImg.jpeg"},
-  //   {media_url : "../image/firstImg.jpeg"},
-  //   {media_url : "../image/firstImg.jpeg"},
-  //   {media_url : "../image/firstImg.jpeg"},
-  //   {media_url : "../image/firstImg.jpeg"},
-  //   {media_url : "../image/firstImg.jpeg"},
-  //   {media_url : "../image/firstImg.jpeg"},
-
-
-  // ]
 
   useEffect(() => {
     axios
@@ -92,9 +79,8 @@ const Gallery = () => {
     <>
       <Header />
       <div className="gallery-section">
-        <div className="Gallery-image-section container">
-        <br></br>
-          <h1>IMAGE.</h1>
+        <div className="Gallery-image-section container-fluid">
+          <h1>GALLERY.</h1>
           <hr style={{ backgroundColor: "#b55467" }}></hr>
         </div>
         <br></br>
@@ -109,9 +95,8 @@ const Gallery = () => {
       <img src={sixthImg} className="w-full brightness-75 hover:brightness-100" alt="Image" />
       <img src={d} className="w-full brightness-75 hover:brightness-100" alt="Image" />
       </div>
-        {error ? (
+        {/* {error ? (
           <h4 className="error" style={{ textAlign: "center" }}>
-            {/* {error} */}
           </h4>
         ) : (
           <>
@@ -204,10 +189,9 @@ const Gallery = () => {
               <Loader />
             )}     
           </>
-        )}
+        )} */}
         <br></br>
       </div>
-      
       <Footer />
     </>
   );

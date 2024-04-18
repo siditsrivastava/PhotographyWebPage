@@ -44,10 +44,10 @@ const Video = () => {
     <>
       <Header />
       <div className="video-section">
-        <div className="video-title-section container">
-          <hr></hr>
-          <h1>Youtube Video.</h1>
-          {/* <hr style={{ backgroundColor: "#b55467" }}></hr> */}
+        <div className="video-title-section container-fluid">
+          
+          <h1>YOUTUBE VIDEO .</h1>
+          <hr style={{ backgroundColor: "#b55467" }}></hr>
         </div>
         {loading ? (
           <div className="youtube-viedo-section container p-5 ">

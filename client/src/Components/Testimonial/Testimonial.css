@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap");
 
 .testimonial-slider-container {
   position: relative;
@@ -42,12 +42,15 @@
 
 /* Apply different box-shadow when hovering */
 .testimonial-card:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 /* Apply a different box-shadow when hovering over the photo */
 .testimonial-card .testimonial-photo:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .testimonial-photo {
@@ -120,7 +123,10 @@
     height: 450px; /* Adjusted height for mobile */
   }
   .testimonial-comment {
-    margin-bottom: 10px; /* Adjusted margin for mobile */
+    margin-bottom: 30px; 
+  }
+  .testimonial {
+    font-size: 2rem;
   }
 }
 
@@ -129,7 +135,6 @@
     width: 33.333%;
   }
   .testimonial-comment {
-    width: 15rem;/* Adjusted margin for mobile */
+    width: 15rem; /* Adjusted margin for mobile */
   }
-  
 }

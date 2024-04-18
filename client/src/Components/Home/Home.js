@@ -4,7 +4,6 @@ import Footer from '../Footer/Footer';
 import Header from "../Header/Header";
 import Marquee from "../Marquee/Marquee";
 import Photo from "../Photos/Photo";
-// import Stories from '../Stories/Stories';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import Testimonial from "../Testimonial/Testimonial";
 import "./Home.css";
@@ -33,13 +32,13 @@ const [text] = useTypewriter({
       <div>
         <div className=" home-section container-fluid">
           <div className="welcome-note container">
-            <h1 className="con text-[5rem]">Welcome</h1>
+            <div className="weclome-text text-[5rem]">Welcome</div>
             <div className="welcome-content text-xl">
               <p>
               Step into a world where Bollywood dreams, Hollywood magic, and Disney fairytales converge. 
               </p>
               <p>
-              Welcome to {' '} 
+              Welcome to 
               <span className=' sumit font-bold font-pacifico'>
                 {text}
               </span>
@@ -76,8 +75,9 @@ const [text] = useTypewriter({
         <p>
           We believe that marriages are a promise of forever, synonymous to
           “…and they lived happily ever after.”
-        </p>
-        <p>
+        {/* </p>
+        <p> */}
+        <br></br>
           We are here to encapsulate your "happily ever after" onto the screen
           just as magically as you had imagined.
         </p>
@@ -110,7 +110,6 @@ const [text] = useTypewriter({
       <hr></hr>
       {/* <Stories/> */}
       <hr></hr>
-      <h1 className="testimonial text-[3rem] mt-[3rem]">TESTIMONIAL</h1>
       <Testimonial />
       <Footer />
       

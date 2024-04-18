@@ -10,16 +10,18 @@
 
 .video-title-section {
   text-align: center;
-  /* font-family: "Playfair Display", serif; */
-  /* font-weight: 900; */
-  /* font-style: normal; */
-  /* font-size: 3rem; */
 }
 
 .video-title-section h1 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+    padding-top: 2rem;
+    text-align: center;
+    padding-bottom: 1.25rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #b55467;
+    font-size: 1.2rem;
+  }
 
 .youtube-viedo-section {
   column-count: 2;
